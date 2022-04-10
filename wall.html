@@ -121,38 +121,38 @@
                     </div>
                 </div>
 
-                
+
             </div>
 
             <!-- 右邊控制項 -->
             <div class="col">
-                <div class="user-info">
-                    <p class="post">
-                        <button type="button">張貼動態</button>
-                    </p>
-                    <p class="name">
-                        <button type="button" class="">
-                            <img src="./asset//user.png" alt="" class="">
-                            <span class=""> 邊緣小杰 </span>
-                        </button>
-                    </p>
-                    <p class="stalk">
-                        <button type="button" class="">
-                            <p class="bell-icon">
-                                <span class="material-icons "> notifications_none </span>
-                            </p>
-                            <span class=""> 追蹤名單 </span>
-                        </button>
-                    </p>
-                    <p class="like">
-                        <button type="button" class="">
-                            <p class="thumbup-icon">
-                                <span class="material-icons "> thumb_up_off_alt </span>
-                            </p>
-                            <span class=""> 我按讚的文章 </span>
-                        </button>
-                    </p>
-                </div>
+                    <div class="user-info">
+                        <p class="post">
+                            <button type="button">張貼動態</button>
+                        </p>
+                        <p class="name">
+                            <button type="button" class="">
+                                <img src="./asset//user.png" alt="" class="">
+                                <span class=""> 邊緣小杰 </span>
+                            </button>
+                        </p>
+                        <p class="stalk">
+                            <button type="button" class="">
+                                <p class="bell-icon">
+                                    <span class="material-icons "> notifications_none </span>
+                                </p>
+                                <span class=""> 追蹤名單 </span>
+                            </button>
+                        </p>
+                        <p class="like">
+                            <button type="button" class="">
+                                <p class="thumbup-icon">
+                                    <span class="material-icons "> thumb_up_off_alt </span>
+                                </p>
+                                <span class=""> 我按讚的文章 </span>
+                            </button>
+                        </p>
+                    </div>
             </div>
         </div>
 
@@ -217,8 +217,11 @@
         width: 865px;
         margin: 0 auto;
         display: flex;
-        flex-wrap: wrap;
         justify-content: space-between;
+    }
+
+    .col {
+        margin: 0 auto;
     }
 
     /* ---------------導覽列開始--------------- */
@@ -421,6 +424,7 @@
 
 
     /* 動態牆右邊控制項開始 */
+   
     .user-info {
         padding: 32px 24px;
         border: 2px solid #000400;
@@ -502,7 +506,7 @@
         color: #fff;
     }
 
-    .rwd-items-block{
+    .rwd-items-block {
         display: none;
     }
 
@@ -513,6 +517,7 @@
     @media (max-width: 576px) {
         .row {
             width: 576px;
+            flex-wrap: wrap;
             padding: 0 12px;
         }
 
@@ -535,20 +540,22 @@
             display: none;
         }
 
-        .rwd-items-block{
+        .rwd-items-block {
             display: block;
             padding: 0 12px;
             position: sticky;
             bottom: 4px;
         }
-        .rwd-items{
+
+        .rwd-items {
             display: flex;
             justify-content: space-between;
             padding: 8px 48px;
             border-radius: 50px 50px;
             background: #EFECE7;
         }
-        .rwd-items p{
+
+        .rwd-items p {
             border-radius: 50%;
             height: 48px;
             width: 48px;
@@ -556,11 +563,13 @@
             justify-content: center;
             align-items: center;
         }
-        .rwd-items p:nth-last-child(1){
+
+        .rwd-items p:nth-last-child(1) {
             background: #03438D;
             color: #fff;
         }
-        .rwd-items p:nth-last-child(1) span{
+
+        .rwd-items p:nth-last-child(1) span {
             transform: rotate(45deg);
         }
     }
