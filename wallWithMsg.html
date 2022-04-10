@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container border-bottom">
+        <div class="row">
+            <div class="nav">
+                <p class="nav-text">MetaWall</p>
+                <div class="nav-user">
+                    <img src="./asset//user.png" alt="user" class="nav-user-img">
+                    <span class="nav-user-name">Member</span>
+                    <!-- hover出現的選單 -->
+                    <div class="nav-user-hover border">
+                        <div class="nav-user-hover-text">
+                            <p class="padding border-bottom">我的貼文牆</p>
+                            <p class="padding border-bottom">修改個人資料</p>
+                            <p class="padding ">登出</p>
+                        </div>
+                    </div>
+                    <div class="nav-user-hover-shadow border">
+                        <div class="nav-user-hover-text">
+                            <p class="padding border-bottom-white">我的貼文牆</p>
+                            <p class="padding border-bottom-white">修改個人資料</p>
+                            <p class="padding border-bottom-white">登出</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <!-- 左邊動態牆 -->
+            <div class="col ">
+
+                <!-- 下拉選單與搜尋框 -->
+                <div class="choose-items">
+                    <div class="select-item border">
+                        <select name="" id="" class="">
+                            <option value="最新貼文">最新貼文</option>
+                        </select>
+                    </div>
+                    <div class="search-item border">
+                        <input type="text" class="search-input" placeholder="搜尋貼文">
+                        <p class="icon-search">
+                            <span class="material-icons "> search </span>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 動態牆貼文 -->
+                <!-- 第一篇 -->
+                <div class="wall-card border">
+                    <!-- 使用者發文資訊 -->
+                    <div class="wall-card-user">
+                        <p class="wall-card-user-img">
+                            <img src="./asset//user.png" alt="user" class="nav-user-img">
+                        </p>
+                        <p class="wall-card-user-info">
+                            <span class="wall-card-user-name">邊緣小杰</span>
+                            <span class="wall-card-user-date">2022/1/10 12:00</span>
+                        </p>
+                    </div>
+
+                    <!-- 發文文章 -->
+                    <div class="wall-card-user-content">
+                        <span class="">外面看起來就超冷....</span>
+                        <span class=""> 我決定回被窩繼續睡....&#062;.&#060;</span>
+                    </div>
+                    <!-- 發文圖片 -->
+                    <div class="wall-card-img">
+                        <img src="./asset/image.png" alt="" class="">
+                    </div>
+                    <!-- 按讚數 -->
+                    <div class="wall-card-thumbup">
+                        <p class="wall-card-thumbup-icon">
+                            <span class="material-icons "> thumb_up_off_alt </span>
+                            <span class="like-count">12</span>
+                        </p>
+                    </div>
+                    <!-- 使用者留言框 -->
+                    <div class="wall-card-user-msg">
+                        <img src="./asset//user.png" alt="" class="wall-card-user-msg-img">
+                        <p class="wall-card-user-input-msg ">
+                            <input type="text" class="border" placeholder="留言...">
+                            <button class="btn-msg border">留言</button>
+                        </p>
+                    </div>
+
+                    <!-- 好友留言框 -->
+                    <!-- 第一個好友留言 -->
+                    <div class="wall-card-friend-msg">
+                        <div class="wall-card-friend-data">
+                            <p class="">
+                                <img src="./asset//user.png" alt="user" class="wall-card-friend-msg-img">
+                            </p>
+                            <p class="wall-card-friend-info">
+                                <span class="wall-card-friend-name">希琳</span>
+                                <span class="wall-card-friend-date">2022/1/11 10:00</span>
+                            </p>
+                        </div>
+                        <div class="wall-card-friend-msg-content">
+                            <p class="">
+                            </p>
+                            <p class="">
+                                <span class="">真的～我已經準備冬眠了</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- 第二個好友留言 -->
+                    <div class="wall-card-friend-msg">
+                        <div class="wall-card-friend-data">
+                            <p class="">
+                                <img src="./asset//user.png" alt="user" class="wall-card-friend-msg-img">
+                            </p>
+                            <p class="wall-card-friend-info">
+                                <span class="wall-card-friend-name">波吉</span>
+                                <span class="wall-card-friend-date">2022/1/11 10:00</span>
+                            </p>
+                        </div>
+                        <div class="wall-card-friend-msg-content">
+                            <p class="">
+                            </p>
+                            <p class="">
+                                <span class="">會嗎？我沒穿衣服都不覺得冷</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 第二篇 -->
+                <div class="wall-card border">
+                    <!-- 使用者發文資訊 -->
+                    <div class="wall-card-user">
+                        <p class="wall-card-user-img">
+                            <img src="./asset//user.png" alt="user" class="nav-user-img">
+                        </p>
+                        <p class="wall-card-user-info">
+                            <span class="wall-card-user-name">米卡莎</span>
+                            <span class="wall-card-user-date">2022/1/10 12:00</span>
+                        </p>
+                    </div>
+
+                    <!-- 發文文章 -->
+                    <div class="wall-card-user-content">
+                        <span class="">搶到想要的 NFT 啦！ya~~</span>
+                    </div>
+
+                    <!-- 發文圖片 -->
+                    <div class="wall-card-img">
+                        <img src="./asset/image2.png" alt="" class="">
+                    </div>
+
+                    <!-- 按讚數 -->
+                    <div class="wall-card-thumbup">
+                        <p class="wall-card-thumbup-icon">
+                            <span class="material-icons no-like-style"> thumb_up_off_alt </span>
+                            <span class="no-like-style">成為第一個按讚的朋友</span>
+                        </p>
+                    </div>
+                    <!-- 使用者留言框 -->
+                    <div class="wall-card-user-msg mb0">
+                        <img src="./asset//user.png" alt="" class="wall-card-user-msg-img">
+                        <p class="wall-card-user-input-msg ">
+                            <input type="text" class="border" value="好羨慕ㄛ！！">
+                            <button class="btn-msg btn-msg-active border">
+                                留言
+                                <span class="material-icons loading-icons"> restart_alt </span>
+                            </button>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 右邊控制項 -->
+            <div class="col">
+                <div class="user-info">
+                    <p class="post">
+                        <button type="button">張貼動態</button>
+                    </p>
+                    <p class="name">
+                        <button type="button" class="">
+                            <img src="./asset//user.png" alt="" class="">
+                            <span class=""> 邊緣小杰 </span>
+                        </button>
+                    </p>
+                    <p class="stalk">
+                        <button type="button" class="">
+                            <p class="bell-icon">
+                                <span class="material-icons "> notifications_none </span>
+                            </p>
+                            <span class=""> 追蹤名單 </span>
+                        </button>
+                    </p>
+                    <p class="like">
+                        <button type="button" class="">
+                            <p class="thumbup-icon">
+                                <span class="material-icons "> thumb_up_off_alt </span>
+                            </p>
+                            <span class=""> 我按讚的文章 </span>
+                        </button>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Azeret+Mono&family=Noto+Sans+TC:wght@300;400;500;700&family=Paytone+One&display=swap');
+
+    * {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        box-sizing: border-box;
+    }
+
+    .fa {
+        font-family: 'Font Awesome 6 Pro';
+    }
+
+    /* 通用CSS */
+    .border {
+        border: 2px solid #000400;
+    }
+
+    .border-bottom {
+        border-bottom: 2px solid #000400;
+    }
+
+    .border-bottom-white {
+        border-bottom: 2px solid #fff;
+    }
+
+    .padding {
+        padding: 8px 0;
+    }
+
+    .mb0 {
+        margin-bottom: 0 !important;
+    }
+
+    .container {
+        width: 100%;
+        margin-bottom: 49px;
+    }
+
+    .row {
+        width: 865px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    /* ---------------導覽列開始--------------- */
+    /* 導覽列 */
+    .nav {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /* 導覽列左邊LOGO */
+    .nav-text {
+        font-family: 'Paytone One', sans-serif;
+        font-weight: bold;
+        font-size: 36px;
+        color: #000400;
+    }
+
+    /* 導覽列右邊使用者的外框 */
+    .nav-user {
+        display: flex;
+        align-items: center;
+        cursor: default;
+        position: relative;
+    }
+
+    /* 導覽列右邊使用者hover */
+    .nav-user:hover>.nav-user-hover {
+        display: block;
+        position: absolute;
+        top: 34px;
+        left: -8px;
+        z-index: 10;
+    }
+
+    /* 使用同樣選單當成hover的影子 */
+    .nav-user:hover>.nav-user-hover-shadow {
+        display: block;
+        position: absolute;
+        top: 40px;
+        left: 0px;
+    }
+
+    .nav-user-hover,
+    .nav-user-hover-shadow {
+        width: 182px;
+        text-align: center;
+        display: none;
+        background: #fff;
+        font-family: 'Noto Sans TC', sans-serif;
+        font-weight: 300;
+    }
+
+    .nav-user-hover p {
+        cursor: default;
+    }
+
+    /* HOVER選單指到改顏色 */
+    .nav-user-hover p:hover {
+        background: #EFECE7;
+    }
+
+    /* 導覽列右邊使用者大頭照 */
+    .nav-user-img {
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+    }
+
+    /* 導覽列右邊使用者名稱 */
+    .nav-user-name {
+        font-family: 'Azeret Mono', sans-serif;
+        font-weight: bold;
+        border-bottom: 2px solid #000400;
+        padding: 0 4.5px 4.5px;
+    }
+
+    /* ---------------導覽列結束--------------- */
+
+    /* ---------------動態牆開始--------------- */
+
+    /* 動態牆左邊控制項開始 */
+
+    /* 下拉選單與搜尋列 */
+    .choose-items {
+        display: flex;
+    }
+
+    /* 下拉選單 */
+    .select-item {
+        display: flex;
+        align-items: center;
+    }
+
+    select {
+        padding: 12px 16px;
+        background: #fff;
+        border: none;
+        margin-right: 12px;
+    }
+
+    /* 搜尋框與放大鏡 */
+    .search-item {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        margin-left: 12px;
+    }
+
+    /* 搜尋框 */
+    .search-item .search-input {
+        display: block;
+        width: 100%;
+        padding: 12px 16px;
+        outline: none;
+        border: none;
+        font: 'Azeret Mono';
+    }
+
+    .search-item .search-input::placeholder {
+        color: #9B9893;
+    }
+
+    /* 放大鏡icon */
+    .search-item .icon-search {
+        background: #03438D;
+        height: 46px;
+        width: 46px;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* 發文內容 */
+    .wall-card {
+        margin-top: 16px;
+        padding: 24px;
+        box-shadow: 0px 3px 0px #000400;
+        border-radius: 8px;
+    }
+
+    .wall-card-user {
+        display: flex;
+        align-items: center;
+        margin-bottom: 16px;
+    }
+
+    .wall-card-user-img img {
+        width: 45px;
+        height: 45px;
+    }
+
+    .wall-card-user-info {
+        margin-left: 12px;
+    }
+
+    .wall-card-user-name {
+        display: block;
+        font-family: 'Noto Sans TC', sans-serif;
+        font-weight: bold;
+    }
+
+    /* 發文名字hover */
+    .wall-card-user-name:hover {
+        text-decoration: underline;
+        color: #03438D;
+        cursor: default;
+    }
+
+    .wall-card-user-date {
+        display: block;
+        font-size: 12px;
+        color: #9B9893;
+    }
+
+    /* 發文內容 */
+    .wall-card-user-content {
+        font-family: 'Noto Sans TC', sans-serif;
+        font-weight: 300;
+        color: #000400;
+        margin-bottom: 16px;
+    }
+
+    .wall-card-user-content span {
+        display: block;
+    }
+
+    /* 發文圖片 */
+    .wall-card-img {
+        margin-bottom: 16px;
+    }
+
+    /* 按讚數 */
+    .wall-card-thumbup {
+        color: #03438D;
+        margin-bottom: 16px;
+    }
+
+    .wall-card-thumbup-icon {
+        display: flex;
+        align-items: center;
+    }
+
+    .wall-card-thumbup .like-count {
+        color: #000400;
+        margin-left: 8px;
+    }
+
+    /* 沒有按讚數 */
+    .no-like-style {
+        color: #9B9893 !important;
+    }
+
+    /* 使用者留言 */
+    .wall-card-user-msg {
+        margin-bottom: 18px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .wall-card-user-msg-img {
+        width: 40px;
+        height: 40px;
+        margin-right: 8px;
+    }
+
+    .wall-card-user-input-msg {
+        display: flex;
+        width: 100%;
+    }
+
+    .wall-card-user-input-msg input {
+        width: calc(100% - 128px);
+        height: 40px;
+        padding: 8px 16px;
+        outline: none;
+        border-right: none;
+    }
+
+    .wall-card-user-input-msg input::placeholder {
+        color: #9B9893;
+    }
+
+    /* 留言按鈕還沒按的狀態 */
+    .wall-card-user-input-msg .btn-msg {
+        width: 128px;
+        padding: 0px;
+        text-align: center;
+        font-family: 'Azeret Mono';
+        background: #03438D;
+        font-size: 16px;
+        color: #fff;
+        outline: none;
+    }
+
+    /* 留言按鈕按下去的狀態 */
+    .wall-card-user-input-msg .btn-msg-active {
+        background: #EEC32A;
+        color: #000400;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* 留言按鈕按下去loading的icon */
+    .loading-icons {
+        font-size: 16px;
+        margin-left: 4px;
+    }
+
+    /* 好友留言 */
+    .wall-card-friend-msg {
+        background: #EFECE7;
+        border-radius: 12px;
+        padding: 16px;
+        margin-bottom: 16px;
+    }
+
+    /* 最下面的好友留言不需要加下margin */
+    .wall-card-friend-msg:nth-last-child(1) {
+        margin-bottom: 0;
+    }
+
+    .wall-card-friend-data {
+        display: flex;
+        align-items: center;
+    }
+
+    .wall-card-friend-msg-img {
+        width: 40px;
+        height: 40px;
+    }
+
+    /* 在好友留言訊息前面加上一個跟朋友大頭照一樣寬的間格 */
+    .wall-card-friend-msg-content>p:nth-child(1) {
+        width: 40px;
+    }
+
+    .wall-card-friend-info,
+    /* 在好友留言訊息前面加上一個跟朋友大頭照一樣寬的間格 */
+    .wall-card-friend-msg-content>p:nth-child(1) {
+        margin-left: 12px;
+    }
+
+    .wall-card-friend-name {
+        display: block;
+        font-family: 'Noto Sans TC', sans-serif;
+    }
+
+    .wall-card-friend-date {
+        display: block;
+        font-size: 12px;
+        color: #9B9893;
+    }
+
+    .wall-card-friend-msg-content {
+        font-family: 'Noto Sans TC', sans-serif;
+        font-weight: 300;
+        color: #000400;
+        display: flex;
+
+    }
+
+    /* 動態牆左邊控制項結束 */
+
+
+
+
+    /* 動態牆右邊控制項開始 */
+    .user-info {
+        padding: 32px 24px;
+        border: 2px solid #000400;
+    }
+
+    /* 控制項發佈按鈕 */
+    .user-info .post button {
+        width: 260px;
+        background: #03438D;
+        box-shadow: -2px 2px 0px #000400;
+        border: 2px solid #000400;
+        border-radius: 8px;
+        color: #FFFFFF;
+        font-family: 'Azeret Mono';
+        font-weight: bold;
+        padding: 16px 0;
+        text-align: center;
+    }
+
+    /* 控制項發佈按鈕hover */
+    .user-info .post button:hover {
+        background: #EEC32A;
+        color: #000400;
+    }
+
+    /* 控制項之間的距離 */
+    .user-info .name,
+    .user-info .stalk,
+    .user-info .like {
+        margin-top: 24px;
+    }
+
+    /* 控制項按鈕得背景與外框 */
+    .user-info .name button,
+    .user-info .stalk button,
+    .user-info .like button {
+        background: #fff;
+        border: none;
+        display: flex;
+        align-items: center;
+
+        font-family: 'Noto Sans TC';
+        font-weight: 500;
+        color: #000400;
+    }
+
+    /* 設定控制項與字的距離 */
+    .user-info .name button>span,
+    .user-info .stalk button>span,
+    .user-info .like button>span {
+        margin-left: 16px;
+    }
+
+    /* 鈴鐺cion 按讚icon*/
+    .user-info .stalk .bell-icon,
+    .user-info .like .thumbup-icon {
+        background: #E2EDFA;
+        border: 2px solid #000400;
+        border-radius: 50%;
+        height: 50px;
+        width: 50px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* 控制項按鈕摸到改變字的顏色 */
+    .user-info .name button:hover,
+    .user-info .stalk button:hover,
+    .user-info .like button:hover {
+        color: #03438D;
+    }
+
+    /* 控制項按鈕摸到改變icon的顏色 */
+    .user-info .stalk button:hover .bell-icon,
+    .user-info .like button:hover .thumbup-icon {
+        background: #03438D;
+        color: #fff;
+    }
+
+    /* 動態牆右邊控制項結束 */
+
+    /* ---------------動態牆結束--------------- */
+</style>

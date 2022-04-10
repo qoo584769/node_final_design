@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <img src="./asset/img.svg" alt="">
+            </div>
+            <div class="col">
+                <div class="login-block">
+
+                    <div class="login-title">
+                        <img src="./asset/MetaWall.png" alt="">
+                        <p class="text">到元宇宙展開全新社交圈</p>
+                    </div>
+                    <div class="login-input">
+                        <input type="text" placeholder="Email">
+                        <input type="password" name="" id=" " placeholder="Password">
+                    </div>
+
+                    <div class="wrong-msg">
+                        <span>帳號或密碼錯誤，請重新輸入！</span>
+                    </div>
+
+                    <div class="btn-block">
+                        <button type="button" class="btn-login">登入</button>
+                        <button type="button" class="btn-signup">註冊帳號</button>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<script>
+    const btn = document.querySelector('.btn-login');
+    const msg = document.querySelector('.wrong-msg');
+    btn.addEventListener('click',(e)=>{
+        msg.style.display = 'block';
+        btn.style.background = '#A8B0B9';
+        btn.style.borderColor = '#808080';
+        btn.style.boxShadow = 'none';
+    });
+</script>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Azeret+Mono&family=Noto+Sans+TC:wght@400;700&display=swap');
+
+    * {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        box-sizing: border-box;
+    }
+
+    .container {
+        width: 100%;
+        height: 100vh;
+        max-width: 1440px;
+        max-height: 960px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .row {
+        width: 870px;
+        padding: 70px 24px;
+        background: #EFECE7;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        box-shadow: -8px 8px 0px #00040029;
+    }
+
+    .col {
+        margin: 0 24px;
+    }
+
+    .login-block {
+        width: 374px;
+    }
+
+    /* LOGO圖片跟字 */
+    .login-title {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 36px;
+    }
+
+    .text {
+        font: 24px 'Helvetica Neue', sans-serif;
+        font-weight: 700;
+    }
+
+    .login-input {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* 帳號密碼輸入框 */
+    .login-input input {
+        padding: 16px 24px 16px;
+        margin-bottom: 16px;
+        border: 2px solid #000400;
+        outline: none;
+        font: Azeret Mono;
+    }
+
+    .login-input input::placeholder {
+        color: #9B9893;
+    }
+
+    /* 錯誤訊息 */
+    .wrong-msg {
+        font: 14px 'Noto Sans TC';
+        color: #F57375;
+        margin: 16px 0 0 0;
+        text-align: center;
+        display: none;
+    }
+
+    /* 登入與註冊按鈕 */
+    .btn-block {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .btn-login {
+        color: #fff;
+        background: #03438D;
+        box-shadow: -2px 2px 0px #000400;
+        border: 2px solid #000400;
+        border-radius: 8px;
+        padding: 16px 0;
+        margin: 16px 0;
+        cursor: pointer;
+        font-size: bold Azeret Mono;
+    }
+
+    .btn-signup {
+        background: none;
+        border: none;
+        cursor: pointer;
+        font-size: Azeret Mono;
+    }
+</style>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <img src="./asset/img.svg" alt="">
+            </div>
+            <div class="col">
+                <div class="login-block">
+
+                    <div class="login-title">
+                        <img src="./asset/MetaWall.png" alt="">
+                        <p class="text">註冊</p>
+                    </div>
+                    <div class="login-input">
+                        <p>
+                            <input type="text" class="nickname" placeholder="暱稱">
+                            <span class="nickname-msg">暱稱至少 2 個字元以上</span>
+                        </p>
+
+                        <p>
+                            <input type="text" class="email" placeholder="Email">
+                            <span class="email-msg">帳號已被註冊，請替換新的 Email！</span>
+                        </p>
+
+                        <p>
+                            <input type="password" class="password" placeholder="Password">
+                            <span class="password-msg">密碼需至少 8 碼以上，並中英混合</span>
+                        </p>
+                    </div>
+
+                    <div class="btn-block">
+                        <button type="button" class="btn-signup">註冊</button>
+                        <button type="button" class="btn-login">登入</button>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<script>
+    const nickname = document.querySelector('.nickname');
+    const email = document.querySelector('.email');
+    const password = document.querySelector('.password');
+    const nicknameMsg = document.querySelector('.nickname-msg');
+    const emailMsg = document.querySelector('.email-msg');
+    const passwordMsg = document.querySelector('.password-msg');
+    nickname.addEventListener('input', (e) => {
+        nicknameMsg.style.display = 'block';
+    });
+    email.addEventListener('input', (e) => {
+        emailMsg.style.display = 'block';
+    });
+    password.addEventListener('input', (e) => {
+        passwordMsg.style.display = 'block';
+    });
+</script>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Azeret+Mono&family=Noto+Sans+TC:wght@400;700&display=swap');
+
+    * {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        box-sizing: border-box;
+    }
+
+    .container {
+        width: 100%;
+        height: 100vh;
+        max-width: 1440px;
+        max-height: 960px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .row {
+        width: 870px;
+        padding: 70px 24px;
+        background: #EFECE7;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        box-shadow: -8px 8px 0px #00040029;
+    }
+
+    .col {
+        margin: 0 24px;
+    }
+
+    .login-block {
+        width: 374px;
+    }
+
+    /* LOGO圖片跟字 */
+    .login-title {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 36px;
+    }
+
+    .text {
+        font: 24px 'Helvetica Neue', sans-serif;
+        font-weight: 700;
+    }
+
+    /* 帳號密碼輸入框 */
+    .login-input p {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 16px;
+    }
+
+    .login-input p input {
+        padding: 16px 24px 16px;
+        border: 2px solid #000400;
+        outline: none;
+        font: Azeret Mono;
+    }
+
+    .login-input p span {
+        display: block;
+    }
+
+    .login-input p input::placeholder {
+        color: #9B9893;
+    }
+
+    /* 錯誤訊息 */
+    .login-input p .nickname-msg,
+    .login-input p .email-msg,
+    .login-input p .password-msg {
+        font: 14px 'Noto Sans TC';
+        color: #F57375;
+        display: none;
+    }
+
+    /* 登入與註冊按鈕 */
+    .btn-block {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .btn-signup {
+        color: #fff;
+        background: #A8B0B9;
+        border: 2px solid #808080;
+        border-radius: 8px;
+        padding: 16px 0;
+        margin: 16px 0;
+        cursor: pointer;
+        font-size: bold Azeret Mono;
+    }
+
+    .btn-login {
+        background: none;
+        border: none;
+        cursor: pointer;
+        font-size: Azeret Mono;
+    }
+</style>
